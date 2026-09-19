@@ -3,26 +3,46 @@ body {
 }
 
 #fishList {
-    flex-direction: row;
-    flex: 1;
-    min-width: 0;
-    margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fishList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    max-width: 305px;
+    margin-bottom: 20px;
     background-color: #95d8ff;
     border-radius: 11px;
     box-shadow: 4px 4px 11px rgb(52, 109, 153);
     overflow: hidden;
+    padding: 5px;
     transition: transform 0.1s ease;
-    padding: 20px;
 }
-#fishList:hover {
+.fishList:hover {
     transform: translateY(-5px);
     box-shadow: 4px 4px 8px rgba(235, 230, 230, 0.6);
 }
-.fish__image {
-    max-width: 100%;
+
+.fish__image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
 }
 
+.fish__image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 #locationList {
     flex-direction: row;
