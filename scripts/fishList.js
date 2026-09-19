@@ -1,9 +1,15 @@
-import { database } from './aquariumData.js';
+import { holyFish, soldierFish, regularFish } from './fishSorter.js';
+
+const orderedFish = [
+    ...holyFish(),
+    ...soldierFish(),
+    ...regularFish()
+]
 
 export const fishList = () => {
     let fishHTML = '';
 
-    for (const fish of database.fish) {
+    for (const fish of orderedFish) {
         fishHTML += `
             <article class="fishList">
                 <div class="fish__image-container">
