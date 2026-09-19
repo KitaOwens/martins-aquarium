@@ -10,10 +10,11 @@ export const fishList = () => {
                     <img src="${fish.image}" alt="this is an image of the ${fish.species}" class="fish__image">
                 </div>
                 <div class="fish__details">
-                  <h2 class="fish__species">${fish.species}</h2>
-                  <p class="fish__location">The ${fish.species} looks like ${fish.name}, and can be found in the ${fish.location}.</p>
-                  <p class="fish__length">This fish is ${fish.length} units long.</p>
-                  <p class="fish__diet">The ${fish.species}'s diet is ${fish.diet}.</p>
+                  <h2 class="fish__name">${fish.name}</h2>
+                  <h3 class="fish__species">species: ${fish.species}</h3>
+                  <p class="fish__location">native to: ${fish.location}.</p>
+                  <p class="fish__length">length: ${fish.length} units</p>
+                  <p class="fish__diet">diet: ${fish.species}</p>
                 </div>
             </article>
         `;
