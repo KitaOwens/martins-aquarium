@@ -1,0 +1,19 @@
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 30px;
+    flex-shrink: 1;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+#tipList {
+    flex: 1;
+}

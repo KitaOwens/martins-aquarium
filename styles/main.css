@@ -1,0 +1,60 @@
+body {
+    background-color: #000000;
+}
+
+#fishList {
+    flex-direction: row;
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #95d8ff;
+    border-radius: 11px;
+    box-shadow: 4px 4px 11px rgb(52, 109, 153);
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    padding: 20px;
+}
+#fishList:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(235, 230, 230, 0.6);
+}
+.fish__image {
+    max-width: 100%;
+}
+
+
+#locationList {
+    flex-direction: row;
+    flex-shrink: 1;
+    min-width: 0;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #95d8ff;
+    border-radius: 11px;
+    box-shadow: 4px 4px 11px rgb(52, 109, 153);
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    padding: 20px;
+}
+#locationList:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(235, 230, 230, 0.6);
+}
+
+
+#tipList {
+    flex-direction: column;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #95d8ff;
+    border-radius: 11px;
+    box-shadow: 4px 4px 11px rgb(52, 109, 153);
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    padding: 20px;
+}
+#tipList:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(235, 230, 230, 0.6);
+}
